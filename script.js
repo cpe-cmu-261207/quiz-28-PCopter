@@ -16,4 +16,6 @@ btnGenerate.onclick = async () => {
   names.innerText = resp.data.result.name;
   address.innerText = resp.data.result.location;
   email.innerText = resp.data.result.email;
+  if ((resp.data.result.gender = "male")) gender.innerText = "👨";
+  else gender.innerText = "👩";
 };
